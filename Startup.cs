@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -36,6 +37,19 @@ namespace PieShop
                 options.UseSqlServer(Configuration.GetConnectionString("LocalDockerConnection"));
             });
 
+            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
+
+            // Configure Identity
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings
+                options.Password.RequireDigit = false;
+                options.Password.RequiredLength = 3;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
+            });
+
             services.AddScoped<IPieRepository, PieRepository>(); // MockPieRepository
             services.AddScoped<ICategoryRepository, CategoryRepository>(); // MockCategoryRepository
             services.AddScoped<IOrderRepository, OrderRepository>(); 
@@ -48,7 +62,7 @@ namespace PieShop
             // services.AddSingleton - Single instance for the entire app that is reused 
 
             services.AddControllersWithViews(); // Add support for MVC (replaces old services.AddMvc())
-
+            services.AddRazorPages();           // Required for scaffolded Identity pages
 
         }
 
@@ -69,6 +83,7 @@ namespace PieShop
 
             app.UseRouting();
             app.UseAuthentication();       // AspNet Identity
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
@@ -80,6 +95,7 @@ namespace PieShop
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                    endpoints.MapRazorPages();
 
             });
         }
