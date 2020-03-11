@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{618EB017-FE24-4EC3-B445-E73F2CB848E3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+    <Files>
+      <File FileName="Views/Shared/_Layout.cshtml" Line="4" Column="7" />
+      <File FileName="Controllers/AboutController.cs" />
+      <File FileName="Views/About/Index.cshtml" Line="45" Column="24" />
+      <File FileName="appsettings.json" Line="16" Column="1" />
+      <File FileName="appsettings.Development.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="pieshop" expanded="True">
+            <Node name="pieshop" expanded="True">
+              <Node name="appsettings.json" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.pieshop PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

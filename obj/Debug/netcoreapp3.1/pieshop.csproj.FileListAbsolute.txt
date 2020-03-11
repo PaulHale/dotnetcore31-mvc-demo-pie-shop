@@ -49,7 +49,6 @@
 /Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/pieshop.TagHelpers.input.cache
 /Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/pieshop.TagHelpers.output.cache
 /Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/pieshop.RazorCoreGenerate.cache
-/Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/Razor/Views/Contact/Index.cshtml.g.cs
 /Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/Razor/Views/Pie/Details.cshtml.g.cs
 /Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/Razor/Views/Pie/List.cshtml.g.cs
@@ -165,3 +164,4 @@
 /Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/Razor/Areas/Identity/Pages/_ViewStart.cshtml.g.cs
 /Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LoginPartial_30.cshtml.g.cs
 /Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LoginPartial.cshtml.g.cs
+/Users/paul/repos/dotnetcore/pieshop/obj/Debug/netcoreapp3.1/Razor/Views/About/Index.cshtml.g.cs

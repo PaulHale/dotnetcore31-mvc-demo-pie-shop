@@ -20649,11 +20649,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/paul/repos/dotnetcore/pieshop/Views/Contact/Index.cshtml",
-      "TargetPath": "Views\\Contact\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/Users/paul/repos/dotnetcore/pieshop/Views/ShoppingCart/Index.cshtml",
       "TargetPath": "Views\\ShoppingCart\\Index.cshtml",
       "FileKind": "mvc"
@@ -20661,6 +20656,11 @@
     {
       "FilePath": "/Users/paul/repos/dotnetcore/pieshop/Views/Pie/Details.cshtml",
       "TargetPath": "Views\\Pie\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/paul/repos/dotnetcore/pieshop/Views/About/Index.cshtml",
+      "TargetPath": "Views\\About\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
