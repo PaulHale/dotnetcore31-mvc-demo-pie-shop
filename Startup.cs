@@ -34,7 +34,8 @@ namespace PieShop
             // register services
             services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("LocalDockerConnection"));
+                // options.UseSqlServer(Configuration.GetConnectionString("LocalDockerConnection"));
+                options.UseSqlServer(Configuration.GetConnectionString("AzureDemoConnection"));
             });
 
             services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<AppDbContext>();
